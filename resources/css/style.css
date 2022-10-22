@@ -7,6 +7,8 @@ html {
     background-size: cover;
   }
 
+
+
 header {
     background-color: #004C54;
     position: fixed;
@@ -23,7 +25,7 @@ nav {
     top: 0;
     border: 5px solid black;
     text-align: center;
-    margin: 10px auto 0;
+    margin: 0 auto 0;
     padding: 10px 0;
 }
 
@@ -33,7 +35,7 @@ nav li {
     font-weight: 600;
     font-size: 30px;
     display: inline-block;
-    width: 180px;
+    width: 300px;
     padding: 0.1;
     text-decoration: none;
 }
@@ -75,11 +77,11 @@ td {
 
 
 
-.standings h2 {
+#standings h2 {
     font-size: 34px;
 }
 
-.standings td{
+#standings td{
     font-size: 20px;
 }
 
@@ -88,7 +90,7 @@ body{
 }
 
 .title {
-    margin-top: 120px;
+    margin-top: 200px;
     font-size: 70px
 }
 
@@ -116,5 +118,7 @@ h1 {
 }
 
 .tableopacity{
+    margin-top: 170px;
     opacity:0.9;
 }
+
