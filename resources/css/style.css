@@ -65,7 +65,7 @@ table {
 th {
     border: 2px solid #004C54;
     
-    background-color: #A5ACAF;
+
   }
 
 td {
@@ -73,10 +73,7 @@ td {
     width: 300px;
   }
 
-.standings h1 {
-    text-shadow: 1px 1px #004C54;
-    font-size: 48px
-}
+
 
 .standings h2 {
     font-size: 34px;
@@ -101,4 +98,23 @@ h1 {
     font-size: 50px;
     text-align: center;
     margin: 20px auto;
+}
+
+.blackbackground {
+    background-color: black;
+}
+
+.silverbackground {
+    background-color: #A5ACAF;
+}
+
+.eaglestextcolors {
+    color: white;
+    text-shadow: 5px 5px #004C54;
+    font-size: 48px
+    
+}
+
+.tableopacity{
+    opacity:0.9;
 }
