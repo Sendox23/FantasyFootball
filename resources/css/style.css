@@ -31,18 +31,16 @@ nav {
 
   
 nav li {
-    color: #fff;
-    font-weight: 600;
-    font-size: 30px;
     display: inline-block;
     width: 300px;
     padding: 0.1;
-    text-decoration: none;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
+    font-weight: 600;
+    font-size: 30px;
 }
 
 
@@ -76,7 +74,6 @@ td {
   }
 
 
-
 #standings h2 {
     font-size: 34px;
 }
@@ -85,13 +82,10 @@ td {
     font-size: 20px;
 }
 
-body{
-    position: relative;
-}
 
 .title {
-    margin-top: 200px;
-    font-size: 70px
+    margin-top: 150px;
+    font-size: 130px
 }
 
 h1 {
@@ -118,7 +112,19 @@ h1 {
 }
 
 .tableopacity{
-    margin-top: 170px;
+    margin-top: 200px;
     opacity:0.9;
 }
 
+#padrespunishers {
+    position: relative;
+    bottom: 105px;
+}
+#churchilleagles {
+    position: relative;
+    top: 75px;
+}
+#numerouno {
+    position: relative;
+    top: 75px;
+}
