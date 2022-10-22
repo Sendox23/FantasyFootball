@@ -128,3 +128,8 @@ h1 {
     position: relative;
     top: 75px;
 }
+
+#standings {
+    position: relative;
+    bottom: 105px;
+}
