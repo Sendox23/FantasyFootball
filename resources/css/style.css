@@ -5,6 +5,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    max-width: 940px;
     
   }
 
@@ -103,7 +104,12 @@ td {
 
 .title {
     margin-top: 200px;
-    font-size: 130px
+    font-size: 130px;
+    text-shadow: 3px 3px #004C54;
+
+    color: black;
+    text-align: center;
+
 }
 
 h1 {
@@ -154,3 +160,29 @@ h1 {
     bottom: -95px;
 }
 
+
+footer {
+    border: 5px black solid;
+    background-color:#004C54;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin: 100px 0 10px;
+    
+}
+
+footer p {
+    color: white;
+    text-shadow: 3px 3px black;
+    font-size: 16px
+}
+
+
+
+.contactinformation {
+    vertical-align: middle;
+    display: inline-block;
+}
+.contactinformation p {
+    padding-left: 40px;
+}
