@@ -1,3 +1,4 @@
+/* MAIN FONT AND BACKGROUND */
 
 html { 
     background: url("../images/eagles-stadium.webp") no-repeat center center fixed; 
@@ -5,37 +6,30 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    max-width: 940px;
-    
-  }
-
-
-
-header {
-    background-color: #004C54;
-    position: fixed;
-    width: 100%;
-    z-index: 10;
     font-family: Lucida, sans-serif;
-  }
-  
+}
+
+/* NAVIGATION BAR */
 
 nav {
     background-color: #004C54;
-    width: 100%;
-    height: 70px;
     position: fixed;
     top: 0;
     border: 5px solid black;
+    z-index: 10;   
+    width: 100%; 
+    padding: 0;
+    margin: auto;
     text-align: center;
-    margin: 0 auto 0;
-    padding: 10px 0;
 }
 
-  
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
 nav li {
     display: inline-block;
-    width: 350px;
+    padding: 0 5px; 
 }
 
 nav a {
@@ -43,81 +37,47 @@ nav a {
     border: 3px #004C54 solid;
     border-radius: 20px;
     box-shadow: 1px 1px 2px 2px;
-    font-weight: 600;
     font-size: 22px;
     text-decoration: none;
     text-shadow: 3px 3px #004C54;
 }
 
 nav a:hover {
-        box-shadow: 2px 2px 5px 5px;
-        background-color: #004C54;
-        color: white;
-        text-transform: uppercase;
-        border: 3px black solid;
-        background-color: black;
+    box-shadow: 2px 2px 5px 5px;
+    background-color: #004C54;
+    color: white;
+    border: 3px black solid;
+    background-color: black;
 }
 
-nav a:active {
-        font-weight: 800;
-}
-
-
-.avatar {
+.minilogo {
     background-image: url('../images/eagles-logo.png');
     background-size: cover;
     height: 50px;
     width: 50px;
-    border-radius: 50%;
     display: inline-block;
     vertical-align: middle;
 }
 
+/* TABLES */
+
 table {
     text-align: center;
-    margin: auto;
+    margin: 200px auto;
     border: 5px solid #004C54;
     background-color: #ACC0C6;
-  }
-
+    opacity:0.9;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 th {
     border: 2px solid #004C54;
-    
-
-  }
+}
 
 td {
     border: 2px solid #004C54;
     width: 300px;
-  }
-
-
-#standings h2 {
-    font-size: 34px;
-}
-
-#standings td{
-    font-size: 20px;
-}
-
-
-.title {
-    margin-top: 200px;
-    font-size: 130px;
-    text-shadow: 3px 3px #004C54;
-
-    color: black;
-    text-align: center;
-
-}
-
-h1 {
-    text-shadow: 3px 3px #004C54;
-    color: black;
-    font-size: 50px;
-    text-align: center;
-    margin: 20px auto;
 }
 
 .blackbackground {
@@ -132,57 +92,18 @@ h1 {
     color: white;
     text-shadow: 5px 5px #004C54;
     font-size: 48px
-    
 }
 
-.tableopacity{
-    margin-top: 200px;
-    opacity:0.9;
-}
-
-#standings {
-    position: relative;
-    bottom: 105px;
-}
-
-#padrespunishers {
-    position: relative;
-    bottom: 105px;
-}
-
-#churchilleagles {
-    position: relative;
-    bottom: -95px;
-}
-
-#numerouno {
-    position: relative;
-    bottom: -95px;
-}
-
+/* FOOTER */
 
 footer {
     border: 5px black solid;
     background-color:#004C54;
     width: 100%;
-    position: relative;
-    bottom: 0;
-    margin: 100px 0 10px;
-    
+    margin: 100px 0 0 0;
+    text-align: center;
 }
 
-footer p {
-    color: white;
-    text-shadow: 3px 3px black;
-    font-size: 16px
-}
-
-
-
-.contactinformation {
-    vertical-align: middle;
+footer div {
     display: inline-block;
-}
-.contactinformation p {
-    padding-left: 40px;
 }
