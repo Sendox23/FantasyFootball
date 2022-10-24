@@ -59,6 +59,16 @@ nav a:hover {
     vertical-align: middle;
 }
 
+/* BANNER */
+
+main {
+    text-align: center;
+    margin: 200px auto;
+    font-size: 100px;
+    color: black;
+    text-shadow: 5px 5px #004C54;
+
+}
 /* TABLES */
 
 table {
@@ -69,6 +79,12 @@ table {
     opacity:0.9;
     margin-left: auto;
     margin-right: auto;
+}
+
+table h1 {
+    color: white;
+    text-shadow: 5px 5px #004C54;
+    font-size: 48px;
 }
 
 th {
@@ -88,11 +104,6 @@ td {
     background-color: #A5ACAF;
 }
 
-.eaglestextcolors {
-    color: white;
-    text-shadow: 5px 5px #004C54;
-    font-size: 48px
-}
 
 /* FOOTER */
 
@@ -100,10 +111,35 @@ footer {
     border: 5px black solid;
     background-color:#004C54;
     width: 100%;
-    margin: 100px 0 0 0;
+    margin: auto;
+    padding: auto;
     text-align: center;
+    position: fixed;
+    bottom: 0;
 }
 
 footer div {
     display: inline-block;
+}
+
+footer p {
+    color: white;
+    font-weight: bold;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+footer a:hover {
+    box-shadow: 2px 2px 5px 5px;
+    color: white;
+    border: 3px black solid;
+    background-color: black;
 }
