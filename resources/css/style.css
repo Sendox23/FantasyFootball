@@ -5,6 +5,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    
   }
 
 
@@ -14,13 +15,14 @@ header {
     position: fixed;
     width: 100%;
     z-index: 10;
+    font-family: Lucida, sans-serif;
   }
   
 
 nav {
     background-color: #004C54;
     width: 100%;
-    height: 80px;
+    height: 70px;
     position: fixed;
     top: 0;
     border: 5px solid black;
@@ -32,15 +34,31 @@ nav {
   
 nav li {
     display: inline-block;
-    width: 300px;
-    padding: 0.1;
+    width: 350px;
 }
 
 nav a {
     color: #fff;
-    text-decoration: none;
+    border: 3px #004C54 solid;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px 2px;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 22px;
+    text-decoration: none;
+    text-shadow: 3px 3px #004C54;
+}
+
+nav a:hover {
+        box-shadow: 2px 2px 5px 5px;
+        background-color: #004C54;
+        color: white;
+        text-transform: uppercase;
+        border: 3px black solid;
+        background-color: black;
+}
+
+nav a:active {
+        font-weight: 800;
 }
 
 
@@ -56,7 +74,7 @@ nav a {
 
 table {
     text-align: center;
-    margin: 20px auto;
+    margin: auto;
     border: 5px solid #004C54;
     background-color: #ACC0C6;
   }
@@ -84,7 +102,7 @@ td {
 
 
 .title {
-    margin-top: 150px;
+    margin-top: 200px;
     font-size: 130px
 }
 
@@ -116,20 +134,23 @@ h1 {
     opacity:0.9;
 }
 
-#padrespunishers {
-    position: relative;
-    bottom: 105px;
-}
-#churchilleagles {
-    position: relative;
-    top: 75px;
-}
-#numerouno {
-    position: relative;
-    top: 75px;
-}
-
 #standings {
     position: relative;
     bottom: 105px;
 }
+
+#padrespunishers {
+    position: relative;
+    bottom: 105px;
+}
+
+#churchilleagles {
+    position: relative;
+    bottom: -95px;
+}
+
+#numerouno {
+    position: relative;
+    bottom: -95px;
+}
+
