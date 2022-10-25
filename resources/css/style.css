@@ -1,6 +1,6 @@
 /* MAIN FONT AND BACKGROUND */
 
-html { 
+body { 
     background: url("../images/eagles-stadium.webp") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -11,24 +11,17 @@ html {
 
 /* NAVIGATION BAR */
 
-nav {
+.navbar {
     background-color: #004C54;
-    position: fixed;
-    top: 0;
-    border: 4px solid black;
-    z-index: 10;   
-    width: 99%;
-
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
+    border: 5px solid black;
+    z-index: 10;
+    padding: 3px;    
+    list-style: none;  
 }
 
 
-nav a {
+
+.navbar a {
     color: #fff;
     border: 3px #004C54 solid;
     border-radius: 20px;
@@ -38,7 +31,7 @@ nav a {
     text-shadow: 3px 3px #004C54;
 }
 
-nav a:hover {
+.navbar a:hover {
     box-shadow: 2px 2px 5px 5px;
     background-color: #004C54;
     color: white;
@@ -58,24 +51,18 @@ nav a:hover {
 
 /* BANNER */
 
-main {
-    text-align: center;
-    margin: 200px auto;
-    font-size: 100px;
+.banner {
+    font-size: 88px;
     color: black;
-    text-shadow: 5px 5px #004C54;
-
+    text-shadow: 4px 4px #004C54;
 }
+
 /* TABLES */
 
 table {
-    text-align: center;
-    margin: 200px auto;
     border: 5px solid #004C54;
     background-color: #ACC0C6;
     opacity:0.9;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 table h1 {
@@ -90,7 +77,6 @@ th {
 
 td {
     border: 2px solid #004C54;
-    width: 300px;
 }
 
 .blackbackground {
@@ -104,32 +90,28 @@ td {
 
 /* FOOTER */
 
-footer {
+.footer {
     border: 5px black solid;
     background-color:#004C54;
-    width: 99%;
-    display: flex;
-    justify-content: space-around;
 }
 
 
-footer p {
+.footer p {
     color: white;
     font-weight: bold;
 }
 
-footer ul {
+.footer ul {
     list-style: none;
-    line-height: 20px;
 }
 
 
-footer a {
+.footer a {
     color: white;
     text-decoration: none;  
 }
 
-footer a:hover {
+.footer a:hover {
     box-shadow: 2px 2px 5px 5px;
     color: white;
     border: 3px black solid;

@@ -1,0 +1,44 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 10% 1fr 10%;
+}
+
+.navbar {
+    display: inline-grid;
+    grid-template-columns: repeat(5, 1fr);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 10px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.navbar nav {
+    align-self: center;
+}
+
+.banner {
+    align-self: auto;
+    justify-self: center;
+    margin-top: 40px;
+}
+
+
+
+.footer {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    text-align: center;
+}
+
+.handles {
+    padding: 1px;
+}
