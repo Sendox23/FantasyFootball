@@ -151,3 +151,10 @@ td {
 .handles {
     padding: 1px;
 }
+
+@media only screen and (max-width: 480px) {
+    .page-title {
+      width: 270px;
+      height: auto;
+    }
+  }
