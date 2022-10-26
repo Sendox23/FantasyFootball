@@ -1,4 +1,9 @@
+
 /* MAIN FONT AND BACKGROUND */
+
+html {
+    height: 100%;
+}
 
 body { 
     background: url("../images/eagles-stadium.webp") no-repeat center center fixed; 
@@ -6,22 +11,29 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family: Lucida, sans-serif;
+    font-family: Lucida, sans-serif;    
+    height: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto auto auto;
 }
 
 /* NAVIGATION BAR */
 
-.navbar {
-    background-color: #004C54;
-    border: 5px solid black;
-    z-index: 10;
-    padding: 3px;    
-    list-style: none;  
+#navbar {
+    background-color: #004C54;    
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+    z-index: 10;     
+    display: inline-grid;    
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center; 
+    height: 45px;
+    position: fixed;
+    width: 100%;
 }
 
-
-
-.navbar a {
+#navbar a {
     color: #fff;
     border: 3px #004C54 solid;
     border-radius: 20px;
@@ -31,7 +43,7 @@ body {
     text-shadow: 3px 3px #004C54;
 }
 
-.navbar a:hover {
+#navbar a:hover {
     box-shadow: 2px 2px 5px 5px;
     background-color: #004C54;
     color: white;
@@ -54,16 +66,28 @@ body {
 .banner {
     font-size: 88px;
     color: black;
-    text-shadow: 4px 4px #004C54;
+    text-shadow: 4px 4px #004C54;    
+    align-self: auto;
+    justify-self: center;
+    margin-top: 5%;
 }
 
 /* TABLES */
-
+#tables {
+    display:grid;
+    grid-template: 1fr;
+    justify-content: center;
+    align-content: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
 table {
     border: 5px solid #004C54;
     background-color: #ACC0C6;
     opacity:0.9;
+    text-align: center;
 }
+
 
 table h1 {
     color: white;
@@ -91,10 +115,16 @@ td {
 /* FOOTER */
 
 .footer {
-    border: 5px black solid;
-    background-color:#004C54;
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+    background-color:#004C54;    
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    height: 80px;
+    position: relative;
+    bottom: 0;
 }
-
 
 .footer p {
     color: white;
@@ -116,4 +146,8 @@ td {
     color: white;
     border: 3px black solid;
     background-color: black;
+}
+
+.handles {
+    padding: 1px;
 }
