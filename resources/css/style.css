@@ -2,52 +2,66 @@
 /* MAIN FONT AND BACKGROUND */
 
 html {
-    height: 100%;
-}
-
-body { 
+    height: 100%;    
     background: url("../images/eagles-stadium.webp") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     font-family: Lucida, sans-serif;    
-    height: 100%;
     margin: 0;
-    display: grid;
-    grid-template-rows: auto auto auto;
+    font-size: 16px;
 }
+
+/* MAIN FLEX GRID DISPLAY */
+
+main {
+    margin: 0 auto;
+  }
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+article,
+aside {
+    flex-basis: 100%;
+}
+
+
 
 /* NAVIGATION BAR */
 
-#navbar {
-    background-color: #004C54;    
-    border-bottom: 5px solid black;
-    border-top: 5px solid black;
-    z-index: 10;     
-    display: inline-grid;    
-    grid-template-columns: repeat(5, 1fr);
-    text-align: center; 
-    height: 45px;
+nav {
+    display: inline-flex;
+    justify-content: space-evenly;    
     position: fixed;
+    z-index: 100;
     width: 100%;
+    height: 2.5rem;
+    border-bottom: .25rem solid black;
+    border-top: .25rem solid black;    
+    background-color: #004C54;   
+    top: 0;
+    text-align: center;
+    padding: 0.5rem 0;
 }
 
-#navbar a {
+
+nav a{
     color: #fff;
-    border: 3px #004C54 solid;
-    border-radius: 20px;
-    box-shadow: 1px 1px 2px 2px;
-    font-size: 22px;
+    border: .25rem #004C54 solid;
+    border-radius: 1.25rem;
+    box-shadow: 0.0625rem 0.0625rem 0.125rem 0.125rem;
+    font-size: 1.25rem;
     text-decoration: none;
-    text-shadow: 3px 3px #004C54;
+    text-shadow: .2rem .2rem #004C54;
 }
 
-#navbar a:hover {
-    box-shadow: 2px 2px 5px 5px;
+nav a:hover {
+    box-shadow: 0.125rem 0.125rem 0.3125rem 0.3125rem;
     background-color: #004C54;
     color: white;
-    border: 3px black solid;
+    border: .25rem black solid;
     background-color: black;
 }
 
@@ -55,24 +69,45 @@ body {
 .minilogo {
     background-image: url('../images/eagles-logo.png');
     background-size: cover;
-    height: 50px;
-    width: 50px;
+    height: 3rem;
+    width: 3rem;
     display: inline-block;
     vertical-align: middle;
 }
+@media screen and (max-width: 440px) {
+    .minilogo {
+        display: none;
+    }
+}
+
 
 /* BANNER */
 
 .banner {
-    font-size: 88px;
+    font-size: 5rem;
     color: black;
-    text-shadow: 4px 4px #004C54;    
-    align-self: auto;
-    justify-self: center;
-    margin-top: 5%;
+    text-shadow: .25rem .25rem #004C54;    
+    text-align: center;
+    margin-top: 10%;
+}
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 70%;
+    }
+}
+
+main .images {
+    justify-content: center;
+}
+main img {
+    width: 80%;
+    height: auto;
+    border: .25rem solid #004C54;
+    margin: 2%;
 }
 
 /* TABLES */
+
 #tables {
     display:grid;
     grid-template: 1fr;
@@ -82,7 +117,7 @@ body {
     margin-bottom: 3%;
 }
 table {
-    border: 5px solid #004C54;
+    border: 0.3125rem solid #004C54;
     background-color: #ACC0C6;
     opacity:0.9;
     text-align: center;
@@ -91,16 +126,16 @@ table {
 
 table h1 {
     color: white;
-    text-shadow: 5px 5px #004C54;
-    font-size: 48px;
+    text-shadow: 0.3125rem 0.3125rem #004C54;
+    font-size: 3rem;
 }
 
 th {
-    border: 2px solid #004C54;
+    border: 0.125rem solid #004C54;
 }
 
 td {
-    border: 2px solid #004C54;
+    border: 0.125rem solid #004C54;
 }
 
 .blackbackground {
@@ -114,47 +149,41 @@ td {
 
 /* FOOTER */
 
-.footer {
-    border-bottom: 5px solid black;
-    border-top: 5px solid black;
+footer {
+    border-bottom: 0.3125rem solid black;
+    border-top: 0.3125rem solid black;
     background-color:#004C54;    
-    display: inline-grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: inline-flex;
     text-align: center;
-    height: 80px;
-    position: relative;
-    bottom: 0;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10%;
+    width: 100%;
 }
 
-.footer p {
+footer h3 {
     color: white;
     font-weight: bold;
 }
 
-.footer ul {
+footer menu {
     list-style: none;
 }
 
 
-.footer a {
+footer a {
     color: white;
     text-decoration: none;  
 }
 
-.footer a:hover {
-    box-shadow: 2px 2px 5px 5px;
+footer a:hover {
+    box-shadow: 0.125rem 0.125rem 0.3125rem 0.3125rem;
     color: white;
-    border: 3px black solid;
+    border: 0.1875rem black solid;
     background-color: black;
 }
 
 .handles {
-    padding: 1px;
+    padding: 0.0625rem;
 }
 
-@media only screen and (max-width: 480px) {
-    .page-title {
-      width: 270px;
-      height: auto;
-    }
-  }
