@@ -1,289 +1,364 @@
-<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Churchill Eagles</title>
+        <title>Fantasy Football</title>
         <link rel="stylesheet" href="../resources/css/style.css">
-        <link rel="stylesheet" href="../resources/css/grid.css">
+
     </head>
     <body>
+        <main>      
+            <header>
+
+                <!-- NAVIGATION BAR -->
+                <nav>
+                    <div class="navbar home"><div class="minilogo"></div><a href="../index.html">Home</a></div>
+                    <div class="navbar standings"><div class="minilogo"></div><a href="./standings.html">Standings</a></div>
+                </nav>
+
+                <!-- TEAM NAVIGATION BAR -->
+                <teamNav>
+                    <div class="churchhilleagles"><div class="minilogo"></div><a href="#">Churchhill Eagles</a></div>
+                    <div class="padrespunishers"><div class="minilogo"></div><a href="./padrespunishers.html">Padre's Punishers</a></div>
+                    <div class="numerouno"><div class="minilogo"></div><a href="./numerouno.html">Numero Uno</a></div>
+                </teamNav>
+            </header>
         
-        <!-- NAVIGATION BAR -->
+            <!-- WEEKLY TEAM INPUT FROM USER -->
 
-        <div id="navbar">
-            <div class="team home"><div class="minilogo"></div><a href="../index.html">Home</a></div>
-            <div class="team padrespunishers"><div class="minilogo"></div><a href="padrespunishers.html">Padre's Punishers</a></div>
-            <div class="team churchilleagles"><div class="minilogo"></div><a href="#">Churchill Eagles</a></div>
-            <div class="team numerouno"><div class="minilogo"></div><a href="numerouno.html">Numero Uno</a></div>
-            <div class="team standings"><div class="minilogo"></div><a href="standings.html">Standings</a></div>
-        </div>
-        
-        <!-- BANNER -->
-
-        <div class="banner">Fantasy Football 22'</div>    
-
-        <!-- TEAM TABLE -->
-
-        <div id="tables">
-            <table class="tableopacity">
-                <thead>
-                    <tr>
-                        <th class="blackbackground" colspan=6>
-                            <h1 class="eaglestextcolors">Churchill Eagles</h1>
-                        </th>
-                    </tr>
-                    <tr class="silverbackground">
-                        <th>
-                            <h2>Quarterbacks</h2>
-                        </th>
-                        <th>
-                            <h2>Running Backs</h2>
-                        </th>
-                        <th>
-                            <h2>Wide Recievers</h2>
-                        </th>
-                        <th>
-                            <h2>Tight Ends</h2>
-                        </th>
-                        <th>
-                            <h2>Defense</h2>
-                        </th>
-                        <th>
-                            <h2>Kickers</h2>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <h3>Patrick Mahomes, KC (8)</h3>
-                        </td>
-                        <td>
-                            <h3>Alvin Kamara, NO (14)</h3>
-                        </td>
-                        <td>
-                            <h3>Cooper Kupp, LAR (7)</h3>
-                        </td>
-                        <td>
-                            <h3>Travis Kelce, KC (8)</h3>
-                        </td>
-                        <td>
-                            <h3>49ers D/ST, SF (9)</h3>
-                        </td>
-                        <td>
-                            <h3>Evan McPherson, Cin (10)</h3>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3>Aaron Rodgers, GB (14)</h3>
-                        </td>
-                        <td>
-                            <h3>Dalvin Cook, Min (7)</h3>
-                        </td>
-                        <td>
-                            <h3>Justin Jefferson, Min (7)</h3>
-                        </td>
-                        <td>
-                            <h3>George Kittle, SF (9)</h3>
-                        </td>
-                        <td>
-                            <h3>Patriots D/ST, NE (10)</h3>
-                        </td>
-                        <td>
-                            <h3>Brandon McManus, Den (9)</h3>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3>Joe Burrow, Cin (10)</h3>
-                        </td>
-                        <td>
-                            <h3>Cam Akers, LAR (7)</h3>
-                        </td>
-                        <td>
-                            <h3>Stefon Diggs, Buf (7)</h3>
-                        </td>
-                        <td>
-                            <h3>Hockenson, Det (6)</h3>
-                        </td>
-                        <td>
-                            <h3>Chargers D/ST, LAC (8)</h3>
-                        </td>
-                        <td>
-                            <h3>Cade York, Cle (9)</h3>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3>Trevor Lawrence, Jax (11)</h3>
-                        </td>
-                        <td>
-                            <h3>D'Andre Swift, Det (6)</h3>
-                        </td>
-                        <td>
-                            <h3>Tee Higgins, Cin (10)</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3>Matt Ryan, Ind (14)</h3>
-                        </td>
-                        <td>
-                            <h3>J.K. Dobbins, BalQ (10)</h3>
-                        </td>
-                        <td>
-                            <h3>Michael Pittman Jr., Ind (14)</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3>Jimmy Garoppolo, SF (9)</h3>
-                        </td>
-                        <td>
-                            <h3>Nick Chubb, Cle (9)</h3>
-                        </td>
-                        <td>
-                            <h3>Jerry Jeudy, Den (9)</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>Elijah Mitchell, SF (9)</h3>
-                        </td>
-                        <td>
-                            <h3>Courtland Sutton, Den (9)</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>Kenneth Gainwell, Phi (7)</h3>
-                        </td>
-                        <td>
-                            <h3>Christian Kirk, Jax (11)</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>George Pickens, Pit (9)</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>Christian Watson, GB (14)</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-            
-        <!-- CONTACT INFORMATION -->
-
-        <div class="footer">
-            <div class="eaglestextcolors">
-                <p>POWERED BY: SENDOX INC</p>
-                <p>Email: Sendox@protonmail.com</p>
-            </div>
-
-            <div class="footer-section footer-section-right" aria-labelledby="email-subscription">
-                <p id="email-subscription">Subscribe for weekly updates</p>
-                <form role="form">
-                    <input type="email" placeholder="Email Address" class="footer-email-input">
-                    <input type="submit" value="Submit" class="button button-primary footer-email-button"/>
+            <section class="weeklyTeam">  
+    
+                <form action=".html" method="POST">
+                    <span>Select 2 Quarterbacks</span>
+                    <br>
+                    <label for="quarterback">Patrick Mahomes</label>
+                    <input type="checkbox" name="quarterback" id="patrickmahomes" value="patrickmahomes"><br>
+                    <label for="quarterback">Aaron Rodgers</label>
+                    <input type="checkbox" name="quarterback" id="patrickmahomes" value="patrickmahomes"><br>
+                    <label for="quarterback">Joe Burrow</label>
+                    <input type="checkbox" name="quarterback" id="patrickmahomes" value="patrickmahomes"><br>
+                    <label for="quarterback">Trevor Lawrence</label>
+                    <input type="checkbox" name="quarterback" id="patrickmahomes" value="patrickmahomes"><br>
+                    <label for="quarterback">Matt Ryan</label>
+                    <input type="checkbox" name="quarterback" id="patrickmahomes" value="patrickmahomes"><br>
+                    <label for="quarterback">Jimmy Garoppolo</label>
+                    <input type="checkbox" name="quarterback" id="patrickmahomes" value="patrickmahomes">
                 </form>
-            </div>
+                <form>
+                    <span>Select 3 Runningbacks</span>
+                    <br>
+                    <label for="runningback">Patrick Mahomes</label>
+                    <input type="checkbox" name="runningback" id="patrickmahomes" value="patrickmahomes"><br>
+                    <label for="runningback">Patrick Mahomes</label>
+                    <input type="checkbox" name="runningback" id="patrickmahomes" value="patrickmahomes"><br>
+                    <label for="runningback">Patrick Mahomes</label>
+                    <input type="checkbox" name="runningback" id="patrickmahomes" value="patrickmahomes"><br>
+                    <label for="runningback">Patrick Mahomes</label>
+                    <input type="checkbox" name="runningback" id="patrickmahomes" value="patrickmahomes"><br>
+                    <label for="runningback">Patrick Mahomes</label>
+                    <input type="checkbox" name="runningback" id="patrickmahomes" value="patrickmahomes"><br>
+                    <label for="runningback">Patrick Mahomes</label>
+                    <input type="checkbox" name="runningback" id="patrickmahomes" value="patrickmahomes"><br>
+                    <label for="runningback">Patrick Mahomes</label>
+                    <input type="checkbox" name="runningback" id="patrickmahomes" value="patrickmahomes"><br>
+                    <label for="runningback">Patrick Mahomes</label>
+                    <input type="checkbox" name="runningback" id="patrickmahomes" value="patrickmahomes">
+                </form>
+                <form>
+                    <span>Select 4 Wide Recievers</span>
+                    <br>
+                    <label for="widereciever">Patrick Mahomes</label>
+                    <input type="checkbox" name="widereciever" id="patrickmahomes" value="patrickmahomes"><br>
+                    <label for="widereciever">Patrick Mahomes</label>
+                    <input type="checkbox" name="widereciever" id="patrickmahomes" value="patrickmahomes"><br>
+                    <label for="widereciever">Patrick Mahomes</label>
+                    <input type="checkbox" name="widereciever" id="patrickmahomes" value="patrickmahomes"><br>
+                    <label for="widereciever">Patrick Mahomes</label>
+                    <input type="checkbox" name="widereciever" id="patrickmahomes" value="patrickmahomes"><br>
+                    <label for="widereciever">Patrick Mahomes</label>
+                    <input type="checkbox" name="widereciever" id="patrickmahomes" value="patrickmahomes"><br>
+                    <label for="widereciever">Patrick Mahomes</label>
+                    <input type="checkbox" name="widereciever" id="patrickmahomes" value="patrickmahomes"><br>
+                    <label for="widereciever">Patrick Mahomes</label>
+                    <input type="checkbox" name="widereciever" id="patrickmahomes" value="patrickmahomes"><br>
+                    <label for="widereciever">Patrick Mahomes</label>
+                    <input type="checkbox" name="widereciever" id="patrickmahomes" value="patrickmahomes"><br>
+                    <label for="widereciever">Patrick Mahomes</label>
+                    <input type="checkbox" name="widereciever" id="patrickmahomes" value="patrickmahomes"><br>
+                    <label for="widereciever">Patrick Mahomes</label>
+                    <input type="checkbox" name="widereciever" id="patrickmahomes" value="patrickmahomes">
+                </form>
+                <form>
+                    <span>Select a Tight End</span>
+                    <br>
+                    <label for="quarterback">Patrick Mahomes</label>
+                    <input type="checkbox" name="quarterback" id="patrickmahomes" value="patrickmahomes"><br>
+                    <label for="quarterback">Aaron Rodgers</label>
+                    <input type="checkbox" name="quarterback" id="patrickmahomes" value="patrickmahomes"><br>
+                    <label for="quarterback">Joe Burrow</label>
+                    <input type="checkbox" name="quarterback" id="patrickmahomes" value="patrickmahomes">
+                </form>
+                <form>
+                    <span>Select a Defense</span>
+                    <br>
+                    <label for="quarterback">Patrick Mahomes</label>
+                    <input type="checkbox" name="quarterback" id="patrickmahomes" value="patrickmahomes"><br>
+                    <label for="quarterback">Aaron Rodgers</label>
+                    <input type="checkbox" name="quarterback" id="patrickmahomes" value="patrickmahomes"><br>
+                    <label for="quarterback">Joe Burrow</label>
+                    <input type="checkbox" name="quarterback" id="patrickmahomes" value="patrickmahomes">
+                </form>
+                <form>
+                    <span>Select a Kicker</span>
+                    <br>
+                    <label for="quarterback">Patrick Mahomes</label>
+                    <input type="checkbox" name="quarterback" id="patrickmahomes" value="patrickmahomes"><br>
+                    <label for="quarterback">Aaron Rodgers</label>
+                    <input type="checkbox" name="quarterback" id="patrickmahomes" value="patrickmahomes"><br>
+                    <label for="quarterback">Joe Burrow</label>
+                    <input type="checkbox" name="quarterback" id="patrickmahomes" value="patrickmahomes">
+                </form>
 
-            <div>
-                <ul>
-                    <li class="handles facebook"><a href="#">Facebook</a></li>
-                    <li class="handles twitter"><a href="#">Twitter</a></li>
-                    <li class="handles instagram"><a href="#">Instagram</a></li>
-                </ul>
-            </div>    
-        </div>
+            </section>
+
+            <!-- TEAM TABLE -->
+
+            <section class="teamsTable">
+                <table class="tableopacity">
+                    <thead>
+                        <tr>
+                            <th class="blackbackground" colspan=6>
+                                <h1 class="eaglestextcolors">Churchill Eagles</h1>
+                            </th>
+                        </tr>
+                        <tr class="silverbackground">
+                            <th>
+                                <h2>Quarterbacks</h2>
+                            </th>
+                            <th>
+                                <h2>Running Backs</h2>
+                            </th>
+                            <th>
+                                <h2>Wide Recievers</h2>
+                            </th>
+                            <th>
+                                <h2>Tight Ends</h2>
+                            </th>
+                            <th>
+                                <h2>Defense</h2>
+                            </th>
+                            <th>
+                                <h2>Kickers</h2>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h3>Patrick Mahomes, KC (8)</h3>
+                            </td>
+                            <td>
+                                <h3>Alvin Kamara, NO (14)</h3>
+                            </td>
+                            <td>
+                                <h3>Cooper Kupp, LAR (7)</h3>
+                            </td>
+                            <td>
+                                <h3>Travis Kelce, KC (8)</h3>
+                            </td>
+                            <td>
+                                <h3>49ers D/ST, SF (9)</h3>
+                            </td>
+                            <td>
+                                <h3>Evan McPherson, Cin (10)</h3>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Aaron Rodgers, GB (14)</h3>
+                            </td>
+                            <td>
+                                <h3>Dalvin Cook, Min (7)</h3>
+                            </td>
+                            <td>
+                                <h3>Justin Jefferson, Min (7)</h3>
+                            </td>
+                            <td>
+                                <h3>George Kittle, SF (9)</h3>
+                            </td>
+                            <td>
+                                <h3>Patriots D/ST, NE (10)</h3>
+                            </td>
+                            <td>
+                                <h3>Brandon McManus, Den (9)</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Joe Burrow, Cin (10)</h3>
+                            </td>
+                            <td>
+                                <h3>Cam Akers, LAR (7)</h3>
+                            </td>
+                            <td>
+                                <h3>Stefon Diggs, Buf (7)</h3>
+                            </td>
+                            <td>
+                                <h3>Hockenson, Det (6)</h3>
+                            </td>
+                            <td>
+                                <h3>Chargers D/ST, LAC (8)</h3>
+                            </td>
+                            <td>
+                                <h3>Cade York, Cle (9)</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Trevor Lawrence, Jax (11)</h3>
+                            </td>
+                            <td>
+                                <h3>D'Andre Swift, Det (6)</h3>
+                            </td>
+                            <td>
+                                <h3>Tee Higgins, Cin (10)</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Matt Ryan, Ind (14)</h3>
+                            </td>
+                            <td>
+                                <h3>J.K. Dobbins, BalQ (10)</h3>
+                            </td>
+                            <td>
+                                <h3>Michael Pittman Jr., Ind (14)</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Jimmy Garoppolo, SF (9)</h3>
+                            </td>
+                            <td>
+                                <h3>Nick Chubb, Cle (9)</h3>
+                            </td>
+                            <td>
+                                <h3>Jerry Jeudy, Den (9)</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>Elijah Mitchell, SF (9)</h3>
+                            </td>
+                            <td>
+                                <h3>Courtland Sutton, Den (9)</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>Kenneth Gainwell, Phi (7)</h3>
+                            </td>
+                            <td>
+                                <h3>Christian Kirk, Jax (11)</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>George Pickens, Pit (9)</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>Christian Watson, GB (14)</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
     </body>
 </html>

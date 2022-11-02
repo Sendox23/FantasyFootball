@@ -1,289 +1,270 @@
-<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Numero Uno</title>
+        <title>Fantasy Football</title>
         <link rel="stylesheet" href="../resources/css/style.css">
-        <link rel="stylesheet" href="../resources/css/grid.css">
+
     </head>
     <body>
+        <main>      
+            <header>
+
+                <!-- NAVIGATION BAR -->
+                <nav>
+                    <div class="navbar home"><div class="minilogo"></div><a href="../index.html">Home</a></div>
+
+                    <div class="navbar standings"><div class="minilogo"></div><a href="./standings.html">Standings</a></div>
+                </nav>
+                
+                <!-- TEAM NAVIGATION BAR -->
+                <teamNav>
+                    <div class="churchhilleagles"><div class="minilogo"></div><a href="./churchilleagles.html">Churchhill Eagles</a></div>
+                    <div class="padrespunishers"><div class="minilogo"></div><a href="./padrespunishers.html">Padre's Punishers</a></div>
+                    <div class="numerouno"><div class="minilogo"></div><a href="#">Numero Uno</a></div>
+                </teamNav> 
+            </header>  
         
-        <!-- NAVIGATION BAR -->
 
-        <div id="navbar">
-            <div class="team home"><div class="minilogo"></div><a href="../index.html">Home</a></div>
-            <div class="team padrespunishers"><div class="minilogo"></div><a href="padrespunishers.html">Padre's Punishers</a></div>
-            <div class="team churchilleagles"><div class="minilogo"></div><a href="churchilleagles.html">Churchill Eagles</a></div>
-            <div class="team numerouno"><div class="minilogo"></div><a href="#">Numero Uno</a></div>
-            <div class="team standings"><div class="minilogo"></div><a href="standings.html">Standings</a></div>
-        </div>
-        
-        <!-- BANNER -->
 
-        <div class="banner">Fantasy Football 22'</div>    
+            <!-- TEAM TABLE -->
 
-        <!-- TEAM TABLE -->
+            <section class="teamsTable">
+                <table class="tableopacity">
+                    <thead>
+                        <tr>
+                            <th class="blackbackground" colspan=6>
+                                <h1 class="eaglestextcolors">Numero Uno</h1>
+                            </th>
+                        </tr>
+                        <tr class="silverbackground">
+                            <th>
+                                <h2>Quarterbacks</h2>
+                            </th>
+                            <th>
+                                <h2>Running Backs</h2>
+                            </th>
+                            <th>
+                                <h2>Wide Recievers</h2>
+                            </th>
+                            <th>
+                                <h2>Tight Ends</h2>
+                            </th>
+                            <th>
+                                <h2>Defense</h2>
+                            </th>
+                            <th>
+                                <h2>Kickers</h2>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h3>Justin Herbert, LAC (8)</h3>
+                            </td>
+                            <td>
+                                <h3>Derrick Henry, Ten (6)</h3>
+                            </td>
+                            <td>
+                                <h3>Ja'Marr Chase, Cin (10)</h3>
+                            </td>
+                            <td>
+                                <h3>Mark Andrews, Bal (10)</h3>
+                            </td>
+                            <td>
+                                <h3>Buccaneers D/ST, TB (11)</h3>
+                            </td>
+                            <td>
+                                <h3>Matt Gay, LAR (7)</h3>
+                            </td>
 
-        <div id="tables">
-            <table class="tableopacity">
-                <thead>
-                    <tr>
-                        <th class="blackbackground" colspan=6>
-                            <h1 class="eaglestextcolors">Numero Uno</h1>
-                        </th>
-                    </tr>
-                    <tr class="silverbackground">
-                        <th>
-                            <h2>Quarterbacks</h2>
-                        </th>
-                        <th>
-                            <h2>Running Backs</h2>
-                        </th>
-                        <th>
-                            <h2>Wide Recievers</h2>
-                        </th>
-                        <th>
-                            <h2>Tight Ends</h2>
-                        </th>
-                        <th>
-                            <h2>Defense</h2>
-                        </th>
-                        <th>
-                            <h2>Kickers</h2>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <h3>Justin Herbert, LAC (8)</h3>
-                        </td>
-                        <td>
-                            <h3>Derrick Henry, Ten (6)</h3>
-                        </td>
-                        <td>
-                            <h3>Ja'Marr Chase, Cin (10)</h3>
-                        </td>
-                        <td>
-                            <h3>Mark Andrews, Bal (10)</h3>
-                        </td>
-                        <td>
-                            <h3>Buccaneers D/ST, TB (11)</h3>
-                        </td>
-                        <td>
-                            <h3>Matt Gay, LAR (7)</h3>
-                        </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Kyler Murray, Ari (13)</h3>
+                            </td>
+                            <td>
+                                <h3>Jonathan Taylor, Ind (14)</h3>
+                            </td>
+                            <td>
+                                <h3>Mike Evans, TB (11)</h3>
+                            </td>
+                            <td>
+                                <h3>Zach Ertz, Ari (13)</h3>
+                            </td>
+                            <td>
+                                <h3>Saints D/ST, NO (14)</h3>
+                            </td>
+                            <td>
+                                <h3>Harrison Butker, KC (8)</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Tom Brady, TB (11)</h3>
+                            </td>
+                            <td>
+                                <h3>Austin Ekeler, LAC(8)</h3>
+                            </td>
+                            <td>
+                                <h3>CeeDee Lamb, Dal (9)</h3>
+                            </td>
+                            <td>
+                                <h3>Darren Waller, LV (6)</h3>
+                            </td>
+                            <td>
+                                <h3>Rams D/ST, LAR (7)</h3>
+                            </td>
+                            <td>
+                                <h3>Nick Folk, NE (10)</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Dak Prescott, Dal (9)</h3>
+                            </td>
+                            <td>
+                                <h3>Joe Mixon, Cin (10)</h3>
+                            </td>
+                            <td>
+                                <h3>Keenan Allen, LAC (8)</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Tua Tagovailoa, Mia (11)</h3>
+                            </td>
+                            <td>
+                                <h3>Leonard Fournette, TB (11)</h3>
+                            </td>
+                            <td>
+                                <h3>DK Metcalf, Sea (11)</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Kirk Cousins, Min (7)</h3>
+                            </td>
+                            <td>
+                                <h3>Josh Jacobs, LV (6)</h3>
+                            </td>
+                            <td>
+                                <h3>Terry McLaurin, Wsh (14)</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>Aaron Jones, GB (14)</h3>
+                            </td>
+                            <td>
+                                <h3>Diontae Johnson, Pit (9)</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>Clyde Edwards-Helaire, KC (8)</h3>
+                            </td>
+                            <td>
+                                <h3>Marquise Brown, Ari (13)</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>DJ Moore, Car (13)</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>Adam Thielen, Min (7)</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                            <td>
+                                <h3>---</h3>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
 
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3>Kyler Murray, Ari (13)</h3>
-                        </td>
-                        <td>
-                            <h3>Jonathan Taylor, Ind (14)</h3>
-                        </td>
-                        <td>
-                            <h3>Mike Evans, TB (11)</h3>
-                        </td>
-                        <td>
-                            <h3>Zach Ertz, Ari (13)</h3>
-                        </td>
-                        <td>
-                            <h3>Saints D/ST, NO (14)</h3>
-                        </td>
-                        <td>
-                            <h3>Harrison Butker, KC (8)</h3>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3>Tom Brady, TB (11)</h3>
-                        </td>
-                        <td>
-                            <h3>Austin Ekeler, LAC(8)</h3>
-                        </td>
-                        <td>
-                            <h3>CeeDee Lamb, Dal (9)</h3>
-                        </td>
-                        <td>
-                            <h3>Darren Waller, LV (6)</h3>
-                        </td>
-                        <td>
-                            <h3>Rams D/ST, LAR (7)</h3>
-                        </td>
-                        <td>
-                            <h3>Nick Folk, NE (10)</h3>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3>Dak Prescott, Dal (9)</h3>
-                        </td>
-                        <td>
-                            <h3>Joe Mixon, Cin (10)</h3>
-                        </td>
-                        <td>
-                            <h3>Keenan Allen, LAC (8)</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3>Tua Tagovailoa, Mia (11)</h3>
-                        </td>
-                        <td>
-                            <h3>Leonard Fournette, TB (11)</h3>
-                        </td>
-                        <td>
-                            <h3>DK Metcalf, Sea (11)</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3>Kirk Cousins, Min (7)</h3>
-                        </td>
-                        <td>
-                            <h3>Josh Jacobs, LV (6)</h3>
-                        </td>
-                        <td>
-                            <h3>Terry McLaurin, Wsh (14)</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>Aaron Jones, GB (14)</h3>
-                        </td>
-                        <td>
-                            <h3>Diontae Johnson, Pit (9)</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>Clyde Edwards-Helaire, KC (8)</h3>
-                        </td>
-                        <td>
-                            <h3>Marquise Brown, Ari (13)</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>DJ Moore, Car (13)</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>Adam Thielen, Min (7)</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                        <td>
-                            <h3>---</h3>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <!-- CONTACT INFORMATION -->
-
-        <div class="footer">
-            <div class="eaglestextcolors">
-                <p>POWERED BY: SENDOX INC</p>
-                <p>Email: Sendox@protonmail.com</p>
-            </div>
-
-            <div class="footer-section footer-section-right" aria-labelledby="email-subscription">
-                <p id="email-subscription">Subscribe for weekly updates</p>
-                <form role="form">
-                    <input type="email" placeholder="Email Address" class="footer-email-input">
-                    <input type="submit" value="Submit" class="button button-primary footer-email-button"/>
-                </form>
-            </div>
-
-            <div>
-                <ul>
-                    <li class="handles facebook"><a href="#">Facebook</a></li>
-                    <li class="handles twitter"><a href="#">Twitter</a></li>
-                    <li class="handles instagram"><a href="#">Instagram</a></li>
-                </ul>
-            </div>    
-        </div>
+        </main>    
     </body>
 </html>

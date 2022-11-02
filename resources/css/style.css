@@ -12,7 +12,7 @@ html {
 
 /* MAIN FLEX GRID DISPLAY */
 
-main {
+body {
     margin: 0 auto;
   }
 
@@ -22,18 +22,19 @@ section {
     flex-wrap: wrap;
 }
 
-article,
-aside {
+article, form {
     flex-basis: 100%;
 }
+
 
 
 
 /* NAVIGATION BAR */
 
 nav {
+
     display: inline-flex;
-    justify-content: space-evenly;    
+    justify-content: center;    
     position: fixed;
     z-index: 100;
     width: 100%;
@@ -42,7 +43,6 @@ nav {
     border-top: .25rem solid black;    
     background-color: #004C54;   
     top: 0;
-    text-align: center;
     padding: 0.5rem 0;
 }
 
@@ -55,6 +55,8 @@ nav a{
     font-size: 1.25rem;
     text-decoration: none;
     text-shadow: .2rem .2rem #004C54;
+    align-items: center;
+
 }
 
 nav a:hover {
@@ -65,6 +67,38 @@ nav a:hover {
     background-color: black;
 }
 
+teamNav {
+    display: inline-flex;
+    justify-content:center;    
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 2.5rem;
+    border-bottom: .25rem solid black;    
+    background-color: #ACC0C6;   
+    top: 4rem;
+    text-align: center;
+    padding: 0.5rem 0;
+
+}
+teamNav a{
+    color: #fff;
+    border: .25rem #004C54 solid;
+    background-color: black;
+    border-radius: 1.25rem;
+    box-shadow: 0.0625rem 0.0625rem 0.125rem 0.125rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    text-shadow: .2rem .2rem #004C54;
+}
+
+teamNav a:hover {
+    box-shadow: 0.125rem 0.125rem 0.3125rem 0.3125rem;
+    background-color: #004C54;
+    color: white;
+    border: .25rem black solid;
+    background-color: black;
+}
 
 .minilogo {
     background-image: url('../images/eagles-logo.png');
@@ -84,15 +118,16 @@ nav a:hover {
 /* BANNER */
 
 .banner {
-    font-size: 5rem;
+    font-size: 4.5rem;
     color: black;
     text-shadow: .25rem .25rem #004C54;    
     text-align: center;
-    margin-top: 10%;
+    justify-content: center;
+    padding-top: 5%;
 }
 @media screen and (max-width: 600px) {
     html {
-        font-size: 70%;
+        font-size: .7rem;
     }
 }
 
@@ -106,21 +141,56 @@ main img {
     margin: 2%;
 }
 
+
+/* WEEKLY TEAM */
+
+.weeklyTeam {
+    margin-top: 10%;
+    border: .25rem solid #004C54;
+    background-color: white;
+    opacity: 80%;
+    justify-content: center;
+}
+
+.weeklyTeam form {
+    margin: 30px;
+    text-align: center;
+    min-width: fit-content;
+    max-width: fit-content;
+}
+
+.weeklyTeam span {
+    font-size: larger;
+    font-weight: bold;
+    
+}
+@media screen and (max-width: 600px) {
+    .weeklyTeam {
+        height: auto;
+        margin-top: 25%;
+        justify-content: center;
+    }}
+    
 /* TABLES */
 
-#tables {
-    display:grid;
-    grid-template: 1fr;
+.teamsTable {
     justify-content: center;
     align-content: center;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    margin-top: 5%;
+}
+
+.standingsTable {
+    justify-content: center;
+    align-content: center;
+    margin-top: 20%;
+
 }
 table {
     border: 0.3125rem solid #004C54;
     background-color: #ACC0C6;
     opacity:0.9;
     text-align: center;
+    
 }
 
 
@@ -132,11 +202,14 @@ table h1 {
 
 th {
     border: 0.125rem solid #004C54;
+
 }
 
 td {
     border: 0.125rem solid #004C54;
+
 }
+
 
 .blackbackground {
     background-color: black;
@@ -145,7 +218,15 @@ td {
 .silverbackground {
     background-color: #A5ACAF;
 }
-
+@media screen and (max-width: 600px) {
+    .teamsTable, .standingsTable {
+        width: 70%;
+        height: auto;
+        margin-top: 25%;
+        padding: 0 10%;
+        
+    }
+}
 
 /* FOOTER */
 
